@@ -112,7 +112,7 @@
         "name": "MyLocation"
       },
       {
-        "uri": "widgets/AttributeTable/Widget",
+        "uri": "",
         "version": "2.16",
         "position": {
           "left": 10,
@@ -121,8 +121,7 @@
         },
         "closeable": true,
         "id": "widgets_AttributeTable_Widget_27",
-        "name": "AttributeTable",
-        "config": "configs/AttributeTable/config_widgets_AttributeTable_Widget_27.json"
+        "placeholderIndex": 1
       },
       {
         "uri": "widgets/Coordinate/Widget",
@@ -162,7 +161,7 @@
           "top": 20,
           "relativeTo": "map"
         },
-        "placeholderIndex": 1,
+        "placeholderIndex": 2,
         "id": "_31"
       },
       {
@@ -171,7 +170,7 @@
           "top": 20,
           "relativeTo": "map"
         },
-        "placeholderIndex": 2,
+        "placeholderIndex": 3,
         "id": "_32"
       },
       {
@@ -180,7 +179,7 @@
           "top": 20,
           "relativeTo": "map"
         },
-        "placeholderIndex": 3,
+        "placeholderIndex": 4,
         "id": "_33"
       },
       {
@@ -266,41 +265,38 @@
         "id": "widgets_BasemapGallery_Widget_37"
       },
       {
-        "name": "Directions",
-        "version": "2.16",
-        "uri": "widgets/Directions/Widget",
-        "index": 6,
-        "id": "widgets_Directions_Widget_38"
-      },
-      {
-        "name": "Geoprocessing",
-        "version": "2.16",
-        "uri": "widgets/Geoprocessing/Widget",
-        "index": 7,
-        "id": "widgets_Geoprocessing_Widget_39"
-      },
-      {
         "name": "Measurement",
         "version": "2.16",
         "uri": "widgets/Measurement/Widget",
-        "index": 8,
+        "index": 6,
         "id": "widgets_Measurement_Widget_40"
       },
       {
-        "name": "Query",
+        "name": "AttributeTable",
         "version": "2.16",
-        "uri": "widgets/Query/Widget",
-        "index": 9,
-        "id": "widgets_Query_Widget_41",
-        "config": "configs/Query/config_widgets_Query_Widget_41.json"
+        "uri": "widgets/AttributeTable/Widget",
+        "config": "configs/AttributeTable/config_widgets_AttributeTable_Widget_43.json",
+        "index": 7,
+        "id": "widgets_AttributeTable_Widget_43",
+        "position": {
+          "relativeTo": "map"
+        }
+      },
+      {
+        "name": "Select",
+        "version": "2.16",
+        "uri": "widgets/Select/Widget",
+        "config": "configs/Select/config_widgets_Select_Widget_44.json",
+        "index": 8,
+        "id": "widgets_Select_Widget_44"
       },
       {
         "name": "selectByAttributes",
         "version": "2.8",
         "uri": "widgets/selectByAttributes/Widget",
-        "config": "configs/selectByAttributes/config_widgets_selectByAttributes_Widget_42.json",
-        "index": 11,
-        "id": "widgets_selectByAttributes_Widget_42"
+        "config": "configs/selectByAttributes/config_widgets_selectByAttributes_Widget_45.json",
+        "index": 10,
+        "id": "widgets_selectByAttributes_Widget_45"
       }
     ],
     "groups": []
@@ -488,374 +484,7 @@
     "rules": []
   },
   "dataSource": {
-    "dataSources": {
-      "widget~widgets_Query_Widget_41~0": {
-        "id": "widget~widgets_Query_Widget_41~0",
-        "type": "Features",
-        "label": "Footprint Lengkap",
-        "dataSchema": {
-          "geometryType": "esriGeometryPolygon",
-          "fields": [
-            {
-              "name": "FID",
-              "type": "esriFieldTypeOID",
-              "actualType": "int",
-              "alias": "FID",
-              "sqlType": "sqlTypeInteger",
-              "nullable": false,
-              "editable": false,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "Id",
-              "type": "esriFieldTypeInteger",
-              "actualType": "int",
-              "alias": "Id",
-              "sqlType": "sqlTypeInteger",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "OBJECTID",
-              "type": "esriFieldTypeInteger",
-              "actualType": "int",
-              "alias": "OBJECTID",
-              "sqlType": "sqlTypeInteger",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "SHAPE_Leng",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "SHAPE_Leng",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "SHAPE_Area",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "SHAPE_Area",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "kode_B",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "kode_B",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 50,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "kode_B_1",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "kode_B_1",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "D_NOP",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "D_NOP",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 18,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "PERSILPASI",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "PERSILPASI",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "PENGGUNAAN",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "PENGGUNAAN",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "NILAI",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "NILAI",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "TIPEHAK",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "TIPEHAK",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "NUMERIKID",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "NUMERIKID",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "VALIDATORG",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "VALIDATORG",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "SUMBERGEOM",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "SUMBERGEOM",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "WILAYAHID",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "WILAYAHID",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "KANTORID",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "KANTORID",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "KANTORINDU",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "KANTORINDU",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "TIPEPRODUK",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "TIPEPRODUK",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "TAHUN",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "TAHUN",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "LUAS",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "LUAS",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "NIB",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "NIB",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "LUASPETA",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "LUASPETA",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "MEAN_grid_",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "MEAN_grid_",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "SUM_grid_c",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "SUM_grid_c",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "volume",
-              "type": "esriFieldTypeSingle",
-              "actualType": "real",
-              "alias": "volume",
-              "sqlType": "sqlTypeReal",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "tingkat",
-              "type": "esriFieldTypeString",
-              "actualType": "nvarchar",
-              "alias": "tingkat",
-              "sqlType": "sqlTypeNVarchar",
-              "length": 254,
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "POLY_AREA",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "POLY_AREA",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": true,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "Shape__Area",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "Shape__Area",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": false,
-              "domain": null,
-              "defaultValue": null
-            },
-            {
-              "name": "Shape__Length",
-              "type": "esriFieldTypeDouble",
-              "actualType": "float",
-              "alias": "Shape__Length",
-              "sqlType": "sqlTypeFloat",
-              "nullable": true,
-              "editable": false,
-              "domain": null,
-              "defaultValue": null
-            }
-          ],
-          "displayField": "",
-          "objectIdField": {
-            "name": "FID",
-            "type": "esriFieldTypeOID",
-            "actualType": "int",
-            "alias": "FID",
-            "sqlType": "sqlTypeInteger",
-            "nullable": false,
-            "editable": false,
-            "domain": null,
-            "defaultValue": null
-          },
-          "typeIdField": ""
-        }
-      }
-    },
+    "dataSources": {},
     "settings": {}
   },
   "_originConfig": {
